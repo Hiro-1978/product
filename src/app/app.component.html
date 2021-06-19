@@ -1,9 +1,36 @@
-<div class="container">
-  <div style="
-      width: 800px;
-      text-align: center;
-      background-color: aqua;">
-  <h2>Product List</h2>
-  <app-productlist #productList></app-productlist>
+<div class="container" style="width: 1000px;text-align: center;background-color: aqua;">
+<div>
+    <ul style="
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;"
+    >
+    <li style="list-style: none;">
+    <a [routerLink]="['/']">Home</a>
+    </li>
+    <li style="list-style: none;">
+    <a [routerLink]="['/login']">Login</a>
+    </li>
+    <li style="list-style: none;">
+    <a [routerLink]="['/products']">Products</a>
+    </li>
+    <li style="list-style: none;">
+    <a [routerLink]="['/products/222']">Products Id 222</a>
+    </li>
+    </ul>
+    </div>
+
+<div>
+    <router-outlet></router-outlet>
+<!--     <div style="
+        width: 800px;
+        text-align: center;
+        background-color: aqua;">
+    <h2>Product List</h2>
+    <app-productlist #productList></app-productlist>    
+  </div> -->
+</div>
+<div>
+    ... Footer...
 </div>
 </div>
