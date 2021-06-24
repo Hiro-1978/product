@@ -9,6 +9,8 @@ import { BackendService } from './backend.service';
 import { CatalogModule } from './catalog/catalog.module';
 import { FormsModule } from '@angular/forms';
 import { ApprouteModule } from './approute/approute.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 /* import { HomeModule } from './home/home.module';
 import { RouterModule, Routes } from '@angular/router'; */
 
@@ -28,8 +30,9 @@ import { RouterModule, Routes } from '@angular/router'; */
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    ApprouteModule
+    BrowserAnimationsModule,
+    ApprouteModule,
+    MatButtonModule
   ],
   providers: [/* BackendService */],
   bootstrap: [AppComponent]
